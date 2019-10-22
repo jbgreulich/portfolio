@@ -1,0 +1,31 @@
+.header {
+  background-color: #3a17b7;
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.header li {
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  flex-basis: 35%;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+}
+
+.nav-container {
+  background-color: #3a17b7;
+  display: flex;
+  justify-content: center;
+  /* border-bottom: 1px solid red; */
+  padding-top: 3rem;
+}

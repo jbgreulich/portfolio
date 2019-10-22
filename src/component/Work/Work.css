@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+  color: #fbe10f;
+  font-size: 9rem;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
