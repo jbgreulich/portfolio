@@ -1,6 +1,38 @@
+.sectionName {
+  text-align: center;
+  color: #fbe10f;
+  font-size: 9rem;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
+  transition: 750ms ease 400ms;
+}
+
+.contact:hover {
+  padding-left: 50%;
+  transition: all 750ms ease;
+}
+
+.contact:hover .contactItem {
+  opacity: 1;
+  transition: opacity 250ms ease-in 600ms;
+}
+
+.contactItem {
+  opacity: 0;
+  position: absolute;
+  margin-left: -40%;
+  width: 35%;
+  font-size: 1.5rem;
+  transition: opacity 300ms ease-out;
+}
+
+.contactInfo {
+  color: #fbe10f;
+  font-size: 2rem;
 }

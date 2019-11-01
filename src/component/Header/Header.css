@@ -1,9 +1,9 @@
 .header {
-  background-color: #3a17b7;
-  position: fixed;
-  height: 4rem;
+  /* position: fixed; */
   width: 100%;
-  z-index: 1;
+  /* background-color: #3a17b7; */
+  /* background-color: red; */
+  height: 43px;
 }
 
 .header li {
@@ -23,9 +23,8 @@ nav a {
 }
 
 .nav-container {
-  background-color: #3a17b7;
   display: flex;
   justify-content: center;
-  /* border-bottom: 1px solid red; */
+  border-bottom: 1px solid green;
   padding-top: 3rem;
 }
