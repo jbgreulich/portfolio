@@ -1,42 +1,63 @@
-.sectionName {
-  text-align: center;
-  color: #fbe10f;
-  font-size: 9rem;
-}
-
 .about {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  transition: all 500ms ease;
+  transition: all 500ms ease-in;
 }
 
-.about:hover {
-  padding-left: 50%;
-  transition: all 750ms ease;
+.about:hover .section-name {
+  padding-left: 45%;
+  transition: all 750ms ease-in-out;
 }
 
-.about:hover .aboutItem {
+.about:hover .about-item {
   opacity: 1;
-  transition: opacity 250ms ease-in 600ms;
+  transition: opacity 500ms ease-in 700ms;
 }
 
-.aboutItem {
+.about-item {
   opacity: 0;
-  position: absolute;
-  margin-left: -40%;
   width: 35%;
   font-size: 1.5rem;
-  transition: opacity 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
-.aboutHeader {
+.about-header {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  margin-left: 7px;
+}
+
+.about-body {
   color: #fbe10f;
-  font-size: 2rem;
+  margin-left: 7px;
+  margin-bottom: 20px;
 }
 
-.aboutBody {
+.about-item p {
+  color: #fbe10f;
+}
+
+.tech-icons {
+  font-size: 3rem;
+}
+
+.fab {
+  color: #fbe10f;
+  margin: 5px;
+}
+
+.about-timeline {
+  margin-top: 1rem;
+  padding: 16px 32px 7px 32px;
+}
+
+.about-timeline .event {
+  margin-bottom: 16px;
+}
+
+.about-timeline a {
   color: #fbe10f;
 }

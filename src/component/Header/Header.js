@@ -8,16 +8,16 @@ const Header = () => (
   <div className="header">
     <nav className="nav-container">
       <ul> 
-        <li>
+        <li className="ani">
           <Link to='/'>home</Link>
         </li>
-        <li>
+        <li className="ani">
           <Link to='/work'>work</Link>
         </li>
-        <li>
+        <li className="ani">
           <Link to='/about'>about</Link>
         </li>
-        <li>
+        <li className="ani">
           <Link to='/contact'>contact</Link>
         </li>
       </ul>

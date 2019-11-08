@@ -1,13 +1,13 @@
 .header {
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
-  /* background-color: #3a17b7; */
-  /* background-color: red; */
-  height: 43px;
+  height: 40px;
+  background: #3a17b7;
+  z-index: 1;
 }
 
 .header li {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -25,6 +25,36 @@ nav a {
 .nav-container {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid green;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
+}
+
+.header li:first-of-type {
+  animation: zoom 7s infinite;
+}
+
+.header li:nth-of-type(2) {
+  animation: zoom 7s infinite 400ms;
+}
+
+.header li:nth-of-type(3) {
+  animation: zoom 7s infinite 800ms;
+}
+
+.header li:last-of-type {
+  animation: zoom 7s infinite 1.2s;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
