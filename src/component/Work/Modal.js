@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Icon from '../Icon';
+
 import PropTypes from "prop-types";
 
 import "./Modal.css";
@@ -9,10 +11,16 @@ export default class Modal extends Component {
     this.props.onClose && this.props.onClose(e);
   };
 
-  // renderIcons = () => {
-  //   const {project} = this.props;
-  //   return project.tech.map()
-  // };
+  renderIcons = () => {
+    const {project} = this.props;
+
+    return project.tech.map((tech, index) => {
+      console.log(tech);
+      return (
+        <Icon displayIcon={tech} key={index} />
+      )
+    });
+  };
 
   render() {
     if (!this.props.show) {
@@ -27,11 +35,11 @@ export default class Modal extends Component {
           <div className="modal-content">
             <div className="modal-left">
               <div className="project">
-              <p>{project.name}</p>
+                <p>{project.name}</p>
+                <div className="project-tech-icons">
+                  {this.renderIcons()}
+                </div>
               </div>
-              
-
-              
             </div>
             <div className="modal-right">
               <div className="modal-right-close">

@@ -4,6 +4,7 @@
   align-items: center;
   height: 100%;
   transition: all 500ms ease-in;
+  letter-spacing: 1.25px;
 }
 
 .about:hover .section-name {
@@ -20,44 +21,81 @@
   opacity: 0;
   width: 35%;
   font-size: 1.5rem;
+  color: #fbe10f;
   transition: all 300ms ease-out;
 }
 
 .about-header {
   font-size: 4rem;
   font-weight: 800;
-  margin-bottom: 2rem;
-  margin-left: 7px;
+  color: white;
+  margin-bottom: .5rem;
+  letter-spacing: 4px;
 }
 
 .about-body {
-  color: #fbe10f;
-  margin-left: 7px;
-  margin-bottom: 20px;
-}
-
-.about-item p {
-  color: #fbe10f;
+  margin: 0 auto 4rem 0;
 }
 
 .tech-icons {
+  position: relative;
   font-size: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.fab {
+.tech-icons .fab {
   color: #fbe10f;
-  margin: 5px;
+  margin: 1rem 2rem 1rem 0;
 }
 
-.about-timeline {
-  margin-top: 1rem;
-  padding: 16px 32px 7px 32px;
+.about-more p {
+  margin-bottom: 1rem;
 }
 
-.about-timeline .event {
-  margin-bottom: 16px;
+.about-more-items {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about-timeline a {
+.item {
+  margin: 1rem 2rem 1rem 0;
+}
+
+.item a {
   color: #fbe10f;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 1px solid #fbe10f;
+  letter-spacing: 1.5px;
+  padding: .5rem;
+}
+
+.item a:hover {
+  color: #3a17b7;
+  background-color: #fbe10f;
+  border: 1px solid #3a17b7;
+}
+
+.tooltip {
+  position: relative;
+  display: flex;
+  flex-basis: 20%;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 80%;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #fbe10f;
+  opacity: 0;
+  transition: all 300ms ease;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  opacity: 1;
 }

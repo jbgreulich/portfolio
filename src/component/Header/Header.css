@@ -33,15 +33,15 @@ nav a {
 }
 
 .header li:nth-of-type(2) {
-  animation: zoom 7s infinite 400ms;
+  animation: zoom 7s infinite 300ms;
 }
 
 .header li:nth-of-type(3) {
-  animation: zoom 7s infinite 800ms;
+  animation: zoom 7s infinite 600ms;
 }
 
 .header li:last-of-type {
-  animation: zoom 7s infinite 1.2s;
+  animation: zoom 7s infinite 900ms;
 }
 
 @keyframes zoom {
