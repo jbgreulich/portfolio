@@ -13,9 +13,10 @@
   "author": "Jess Greulich",
   "license": "ISC",
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@hot-loader/react-dom": "^16.10.2",
     "classnames": "^2.2.6",
+    "express": "^4.17.1",
+    "favicon": "0.0.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-hot-loader": "^4.12.15",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "@iconify/icons-logos": "^1.0.9",
