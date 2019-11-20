@@ -1,10 +1,15 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
+const isProd = process.env.NODE_ENV || false;
+const styleLoader = isProd ? MiniCssExtractPlugin.loader : 'style-loader';
 
 module.exports = {
-  mode: 'development',
-  devtool: 'eval-source-map',
+  mode: isProd ? 'production' : 'development',
+  devtool: isProd ? 'source-map' : 'eval-source-map',
   context: path.resolve(__dirname),
   entry: {
     app: ['react-hot-loader/patch', './src/index.js'],
@@ -19,7 +24,7 @@ module.exports = {
       title: 'Jessica Greulich | Portfolio',
     }),
     new MiniCssExtractPlugin({
-      filename: 'dist/styles/[name].css',
+      filename: 'styles/[name].css',
     }),
   ],
   module: {
@@ -31,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [styleLoader, 'css-loader'],
       },
       {
         test: /\.(gif|svg|jpg|jpeg|png)$/,
@@ -51,4 +56,30 @@ module.exports = {
     hot: true,
     open: true,
   },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'initial',
+          enforce: true,
+        },
+      },
+    },
+    minimizer: [
+      new TerserPlugin({
+        sourceMap: true,
+        parallel: true,
+      }),
+      new OptimizeCSSAssetsPlugin({
+        cssProcessorOptions: {
+          map: {
+            inline: false,
+            annotation: true,
+          },
+        },
+      }),
+    ],
+  }
 };
