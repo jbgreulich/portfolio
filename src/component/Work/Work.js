@@ -35,8 +35,8 @@ export default class Work extends Component {
     const { show, project } = this.state;
 
     return (
-      <div className="work">
-        <div className="work-item">
+      <div className="work section-container">
+        <div className="section-item">
           <div className="timeline-content">
             <span>show your work</span>
             <ul className="timeline">
@@ -44,7 +44,7 @@ export default class Work extends Component {
             </ul>
           </div>     
         </div>
-        <div className="section-name">work.</div>
+        <div className="section-title">work.</div>
         <Modal onClose={this.showModal} show={show} project={project} />
       </div>
     );

@@ -34,9 +34,9 @@ export default class Modal extends Component {
         <div className="modal">
           <div className="modal-content">
             <div className="modal-left">
-              <div className="project">
+              <div className="project-info">
                 <p>{project.name}</p>
-                <div className="project-tech-icons">
+                <div className="project-icons">
                   {this.renderIcons()}
                 </div>
               </div>
@@ -63,6 +63,7 @@ export default class Modal extends Component {
     );
   }
 }
+
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
   show: PropTypes.bool.isRequired

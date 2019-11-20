@@ -1,16 +1,13 @@
-.section-home {
-  color: #fbe10f;
-  font-size: 9rem;
+.home {
+  flex-direction: column;
+  transition: 750ms ease 250ms;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transition: 750ms ease 250ms;
-  font-size: 1.5rem;
+.home-section-title {
+  color: #fbe10f;
+  font-size: 9rem;
+  transition: all 600ms ease-out 300ms;
+  margin-top: -10px;
 }
 
 .home:hover {
@@ -27,4 +24,5 @@
   opacity: 0;
   transition: all 300ms ease-out;
   letter-spacing: 3px;
+  font-size: 1.5rem;
 }
