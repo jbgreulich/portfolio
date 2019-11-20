@@ -35,39 +35,38 @@
 .modal-left {
   flex-basis: 40%;
   color: #3a17b7;
-  height: 100%;
   text-align: center;
 }
 
 .project {
-  padding: 1rem;
-  margin: 0;
+  margin: 1.5rem;
+  /* height: 90%; */
 }
 
 .project p {
   font-size: 2.5rem;
   font-weight: 800;
   letter-spacing: 2px;
-  margin: 7px 0 3rem 0;
+  margin: 2rem 0 2rem 0;
   text-transform: uppercase;
 }
 
 .project-tech-icons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.project .fab {
+.project-tech-icons .fab {
+  min-width: 40px;
   color: #3a17b7;
-  font-size: 3rem;
-  margin: 2rem;
-  flex-basis: 20%;
+  font-size: 4rem;
+  margin: 2rem 2rem;
 }
 
 .project-tooltip {
   position: relative;
   display: flex;
-  flex-basis: 20%;
   justify-content: center;
 }
 
@@ -75,6 +74,11 @@
   display: flex;
   justify-content: center;
   color: #3a17b7;
+  font-size: 1.2rem;
+}
+
+.modal-left:hover .tooltip-text {
+  opacity: 1;
 }
 
 /* MODAL RIGHT */
