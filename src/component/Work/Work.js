@@ -38,7 +38,7 @@ export default class Work extends Component {
       <div className="work section-container">
         <div className="section-item">
           <div className="timeline-content">
-            <span>show your work</span>
+            <span>recent projects</span>
             <ul className="timeline">
               {this.renderEvents()}
             </ul>

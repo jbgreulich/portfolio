@@ -97,7 +97,7 @@ export default class About extends Component {
             <ul className="about-items">
               <li className="about-item"><a href="https://github.com/jbgreulich" target="_blank">github</a></li>
               <li className="about-item"><a href="https://www.codecademy.com/profiles/jgreulich" target="_blank">codecademy</a></li>
-              <li className="about-item"><a href="https://drive.google.com/file/d/1rc1-UODs1_9_vXlu1I_ReRfxkG1Xw89d/view?usp=sharing" target="_blank">resume</a></li>
+              <li className="about-item"><a href="https://drive.google.com/open?id=1o8KRnoyWYGNtPub765MXnJcgVCky0j1V" target="_blank">resume</a></li>
               <li className="about-item"><a href="https://www.linkedin.com/in/jessgreulich/" target="_blank">linkedin</a></li>
             </ul>
           </div>
