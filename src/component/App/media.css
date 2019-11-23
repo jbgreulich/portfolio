@@ -208,7 +208,6 @@
  
   nav ul {
     flex-basis: 100%;
-    /* margin-top: 2rem; */
   }
 
   /* home styles */
@@ -231,19 +230,19 @@
   .project-mobile {
     display: block;
     position: relative;
-    top: 30px;
+    top: 40px;
     width: 70%;
   }
 
   .event {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     border-radius: 3px;
-    padding: 1.5rem;
+    padding: 1.15rem;
     background-color: #fbe10f;
   }
 
   .event:last-of-type {
-    padding: 1.5rem;
+    padding: 1.15rem;
   }
 
   li.event {
