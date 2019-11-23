@@ -8,7 +8,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="section-container">
-        <div className="section-item">
+        <div className="about section-item">
           <h1>hi, jess here.</h1>
           <p className="about-description">i'm a software developer based in charleston, sc.</p>
 
@@ -92,7 +92,7 @@ export default class About extends Component {
             
           </div>
           
-          <div className="about">
+          <div className="about-more">
           <p>want to know more? check out my:</p>
             <ul className="about-items">
               <li className="about-item"><a href="https://github.com/jbgreulich" target="_blank">github</a></li>

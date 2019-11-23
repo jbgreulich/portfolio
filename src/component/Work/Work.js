@@ -25,7 +25,7 @@ export default class Work extends Component {
           <button onClick={() => this.showModal(project)}>
             {project.name}
           </button>
-          <p>{project.shortDesc}</p>
+          <p className="short-description">{project.shortDesc}</p>
         </li>
       );
     });
@@ -36,7 +36,7 @@ export default class Work extends Component {
 
     return (
       <div className="work section-container">
-        <div className="section-item">
+        <div className="section-item project-desktop">
           <div className="timeline-content">
             <span>recent projects</span>
             <ul className="timeline">
@@ -46,7 +46,11 @@ export default class Work extends Component {
         </div>
         <div className="section-title">work.</div>
         <Modal onClose={this.showModal} show={show} project={project} />
+
+        <div className="project-mobile">
+          {this.renderEvents()}
+        </div>
       </div>
     );
-  }
+  }p
 }

@@ -11,6 +11,7 @@ import Contact from '../Contact/Contact';
 import '../../reset.css';
 
 import './App.css';
+import './media.css';
 
 export default class App extends Component {
   render() {

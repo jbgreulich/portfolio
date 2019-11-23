@@ -1,8 +1,12 @@
+.project-mobile {
+  display: none;
+}
+
 /* timeline */
 .timeline-content span {
   display: inline-flex;
   position: relative;
-  left: -156px;
+  left: -157px;
   top: 260px;
   transform: rotate(-90deg);
   color: white;
@@ -16,7 +20,7 @@
   border-left: 2px solid #fbe10f;
   color: #fbe10f;
   margin-left: 10px;
-  padding: 32px 32px 4px 22px;
+  padding: 22px 0 0 22px;
 }
 
 .event {
@@ -43,7 +47,7 @@
 
 .section-item .event p {
   font-size: 1.3rem;
-  margin: 7px;
+  margin: 7px 0 7px 12px;
   letter-spacing: normal;
 }
 

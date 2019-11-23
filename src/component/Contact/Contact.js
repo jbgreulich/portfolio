@@ -6,7 +6,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="section-container">
-        <div className="section-item">
+        <div className="contact section-item">
           <h2>like what you see? let's chat.</h2>
           <p className="contact-info">
             email me:<a href="mailto:jessica@greulich.me" title="email address">jessica@greulich.me</a>

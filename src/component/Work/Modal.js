@@ -57,7 +57,25 @@ export default class Modal extends Component {
                 </div>
               </div>
             </div>
+          </div> 
+          
+          <div className="modal-mobile">
+            <div className="project-info">
+              <div className="project-title">{project.name}</div>
+              <div className="modal-right-close">
+                <button className="close" onClick={this.onClose}>
+                  <i className="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+              <p className="project-description">{project.shortDesc}</p>
+              <div className="project-sites">
+                {project.demo && <span><a href={project.demo} target="_blank"><i className="fas fa-desktop"></i>site</a></span>}
+                <span><a href={project.code} target="_blank"><i className="fab fa-github"></i>code</a></span>
+                </div>
+            
           </div>
+          
         </div>
       </div>
     );
