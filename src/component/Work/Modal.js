@@ -32,6 +32,7 @@ export default class Modal extends Component {
     return (
       <div className="background">
         <div className="modal">
+          
           <div className="modal-content">
             <div className="modal-left">
               <div className="project-info">
@@ -68,14 +69,13 @@ export default class Modal extends Component {
                 </button>
               </div>
             </div>
-              <p className="project-description">{project.shortDesc}</p>
-              <div className="project-sites">
-                {project.demo && <span><a href={project.demo} target="_blank"><i className="fas fa-desktop"></i>site</a></span>}
-                <span><a href={project.code} target="_blank"><i className="fab fa-github"></i>code</a></span>
-                </div>
-            
+            <p className="project-description">{project.shortDesc}</p>
+            <div className="project-sites">
+              {project.demo && <span><a href={project.demo} target="_blank"><i className="fas fa-desktop"></i>site</a></span>}
+              <span><a href={project.code} target="_blank"><i className="fab fa-github"></i>code</a></span>
+            </div>
           </div>
-          
+        
         </div>
       </div>
     );

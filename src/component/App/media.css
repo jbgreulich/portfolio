@@ -67,6 +67,10 @@
     letter-spacing: 2px;
   }
 
+  .modal-mobile {
+    display: none;
+  }
+
   .modal {
     left: 50%;
     top: 50%;
@@ -143,6 +147,10 @@
 
   .event {
     padding-bottom: 10px;
+  }
+
+  .modal-mobile {
+    display: none;
   }
 
   .modal {
@@ -230,15 +238,26 @@
   .project-mobile {
     display: block;
     position: relative;
-    top: 40px;
+    top: 25px;
     width: 70%;
   }
 
   .event {
-    margin-bottom: 10px;
-    border-radius: 3px;
+    margin-bottom: 0;
     padding: 1.15rem;
+    border-bottom: 1px solid #3a17b7;
     background-color: #fbe10f;
+
+  }
+
+  .event:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .event:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .event:last-of-type {
@@ -251,6 +270,7 @@
 
   button {
     font-size: 2rem;
+    padding: .5rem;
     color: #3a17b7;
   }
 
