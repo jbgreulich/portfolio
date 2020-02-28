@@ -19,12 +19,26 @@ const projects = [
     demo: "https://jbgreulich.github.io/random_color/",
     code: "https://github.com/jbgreulich/random_color",
     tech: [
-      "html5",
-      "css3",
       "javascript",
       "babel",
       "webpack",
+      "html5",
+      "css3",
     ],
+  },
+  {
+    name: "football player finder",
+    shortDesc: "simple search form",
+    longDesc: "interview code challenge - a search form that fetches player data and filters players using reselect",
+    demo: "",
+    code: "",
+    tech: [
+      "javascript",
+      "react",
+      "redux",
+      "html5",
+      "css3",
+    ]
   },
   {
     name: "ravenous",
@@ -33,10 +47,10 @@ const projects = [
     demo: "https://jbgreulich.github.io/ravenous/",
     code: "https://github.com/jbgreulich/ravenous",
     tech: [
-      "html5",
-      "css3",
       "javascript",
       "react",
+      "html5",
+      "css3",
     ],
   },
   {
@@ -59,9 +73,9 @@ const projects = [
     demo: "https://jbgreulich.github.io/choreBot/",
     code: "https://github.com/jbgreulich/choreBot",
     tech: [
+      "javascript",
       "html5",
       "css3",
-      "javascript",
     ],
   },
   {
@@ -92,13 +106,13 @@ const projects = [
     demo: "",
     code: "https://github.com/jbgreulich/portfolio",
     tech: [
-      "html5",
-      "css3",
       "javascript",
       "react",
       "webpack",
       "babel",
       "expressjs",
+      "html5",
+      "css3",
     ],
   }
 ];
