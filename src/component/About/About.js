@@ -16,6 +16,66 @@ export default class About extends Component {
           <div className="about-icons">
 
             <div className="tooltip">
+              <Icon displayIcon='javascript' />
+              <span className="tooltip-text">javascript</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='react' />
+              <span className="tooltip-text">react</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='redux-about' />
+              <span className="tooltip-text">redux</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='vue' />
+              <span className="tooltip-text">vue.js</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='nodejs' />
+              <span className="tooltip-text">node.js</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='expressjs' />
+              <span className="tooltip-text">express.js</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='webpack-about' />
+              <span className="tooltip-text">webpack</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='babel-about' />
+              <span className="tooltip-text">babel</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='npm' />
+              <span className="tooltip-text">npm</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='mocha-about' />
+              <span className="tooltip-text">mocha</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='ruby-about' />
+              <span className="tooltip-text">ruby</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='rails-about' />
+              <span className="tooltip-text">rails</span>
+            </div>
+
+            <div className="tooltip">
               <Icon displayIcon='html5' />
               <span className="tooltip-text">html5</span>
             </div>
@@ -29,60 +89,20 @@ export default class About extends Component {
               <Icon displayIcon='bootstrap' />
               <span className="tooltip-text">bootstrap</span>
             </div>
-            
-            <div className="tooltip">
-              <Icon displayIcon='javascript' />
-              <span className="tooltip-text">javascript</span>
-            </div>
-            
-            <div className="tooltip">
-              <Icon displayIcon='react' />
-              <span className="tooltip-text">react</span>
-            </div>
-            
-            <div className="tooltip">
-              <Icon displayIcon='vue' />
-              <span className="tooltip-text">vue.js</span>
-            </div>
-            
-            <div className="tooltip">
-              <Icon displayIcon='webpack-about' />
-              <span className="tooltip-text">webpack</span>
-            </div>
 
             <div className="tooltip">
-              <Icon displayIcon='babel-about' />
-              <span className="tooltip-text">babel</span>
-            </div>
-
-            <div className="tooltip">
-              <Icon displayIcon='nodejs' />
-              <span className="tooltip-text">node.js</span>
-            </div>
-            
-            <div className="tooltip">
-              <Icon displayIcon='npm' />
-              <span className="tooltip-text">npm</span>
-            </div>
-            
-            <div className="tooltip">
-              <Icon displayIcon='expressjs' />
-              <span className="tooltip-text">express.js</span>
-            </div>
-
-            <div className="tooltip">
-              <Icon displayIcon='mocha-about' />
-              <span className="tooltip-text">mocha</span>
-            </div>
-            
-            <div className="tooltip">
-              <Icon displayIcon='couchdb-about' />
-              <span className="tooltip-text">couchdb</span>
+              <Icon displayIcon='postgresql-about' />
+              <span className="tooltip-text">postgres</span>
             </div>
 
             <div className="tooltip">
               <Icon displayIcon='sqlite-about' />
               <span className="tooltip-text">sqlite3</span>
+            </div>
+
+            <div className="tooltip">
+              <Icon displayIcon='couchdb-about' />
+              <span className="tooltip-text">couchdb</span>
             </div>
             
             <div className="tooltip">
