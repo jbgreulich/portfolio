@@ -31,7 +31,7 @@ const projects = [
     shortDesc: "simple search form",
     longDesc: "interview code challenge - a search form that fetches player data and filters players using reselect",
     demo: "",
-    code: "",
+    code: "https://github.com/jbgreulich/football-player-finder",
     tech: [
       "javascript",
       "react",
